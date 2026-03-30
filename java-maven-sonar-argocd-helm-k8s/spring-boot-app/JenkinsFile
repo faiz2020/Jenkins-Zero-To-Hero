@@ -6,10 +6,6 @@ pipeline {
     }
   }
 
-tools {
-    git 'Git'
-  }
-
   stages {
     stage('Checkout') {
       steps {
