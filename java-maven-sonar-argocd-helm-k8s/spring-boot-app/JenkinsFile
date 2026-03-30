@@ -1,4 +1,9 @@
 pipeline {
+
+options {
+    skipDefaultCheckout()
+  }
+
   agent {
     docker {
       image 'abhishekf5/maven-abhishek-docker-agent:v1'
